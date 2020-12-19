@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0902A290766520D1974DEE6C /* Pods_ImageCompression.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 775EFE1992E0E2A4E89717A7 /* Pods_ImageCompression.framework */; };
+		39B6C40682DAA6817248A219 /* Pods_ImageCompressionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D65C9F6F44CB5EF6B83C30 /* Pods_ImageCompressionTests.framework */; };
+		8431F2B6B228CEAA5E33AC2F /* Pods_ImageCompression_ImageCompressionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A785104CE2973CAE695DC8 /* Pods_ImageCompression_ImageCompressionUITests.framework */; };
+		E353C27A256F851500C56C8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353C279256F851500C56C8D /* AppDelegate.swift */; };
+		E353C27C256F851500C56C8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353C27B256F851500C56C8D /* SceneDelegate.swift */; };
+		E353C27E256F851500C56C8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353C27D256F851500C56C8D /* ViewController.swift */; };
+		E353C281256F851500C56C8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E353C27F256F851500C56C8D /* Main.storyboard */; };
+		E353C283256F851900C56C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E353C282256F851900C56C8D /* Assets.xcassets */; };
+		E353C286256F851900C56C8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E353C284256F851900C56C8D /* LaunchScreen.storyboard */; };
+		E353C291256F851900C56C8D /* ImageCompressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353C290256F851900C56C8D /* ImageCompressionTests.swift */; };
+		E353C29C256F851900C56C8D /* ImageCompressionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353C29B256F851900C56C8D /* ImageCompressionUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E353C28D256F851900C56C8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E353C26E256F851500C56C8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E353C275256F851500C56C8D;
+			remoteInfo = ImageCompression;
+		};
+		E353C298256F851900C56C8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E353C26E256F851500C56C8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E353C275256F851500C56C8D;
+			remoteInfo = ImageCompression;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		078AD8838C4A448FDF51BBD3 /* Pods-ImageCompression-ImageCompressionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCompression-ImageCompressionUITests.release.xcconfig"; path = "Target Support Files/Pods-ImageCompression-ImageCompressionUITests/Pods-ImageCompression-ImageCompressionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		16907BA1439C9AFCDBB917DA /* Pods-ImageCompressionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCompressionTests.debug.xcconfig"; path = "Target Support Files/Pods-ImageCompressionTests/Pods-ImageCompressionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		27ADACE317A99E90DADB406A /* Pods-ImageCompression-ImageCompressionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCompression-ImageCompressionUITests.debug.xcconfig"; path = "Target Support Files/Pods-ImageCompression-ImageCompressionUITests/Pods-ImageCompression-ImageCompressionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		71D65C9F6F44CB5EF6B83C30 /* Pods_ImageCompressionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageCompressionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		775EFE1992E0E2A4E89717A7 /* Pods_ImageCompression.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageCompression.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4F79CF01181745517F5626 /* Pods-ImageCompression.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCompression.release.xcconfig"; path = "Target Support Files/Pods-ImageCompression/Pods-ImageCompression.release.xcconfig"; sourceTree = "<group>"; };
+		B9F6A8D99E03492858F777DA /* Pods-ImageCompressionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCompressionTests.release.xcconfig"; path = "Target Support Files/Pods-ImageCompressionTests/Pods-ImageCompressionTests.release.xcconfig"; sourceTree = "<group>"; };
+		D6A785104CE2973CAE695DC8 /* Pods_ImageCompression_ImageCompressionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageCompression_ImageCompressionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E353C276256F851500C56C8D /* ImageCompression.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCompression.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E353C279256F851500C56C8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E353C27B256F851500C56C8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E353C27D256F851500C56C8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E353C280256F851500C56C8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E353C282256F851900C56C8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E353C285256F851900C56C8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E353C287256F851900C56C8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E353C28C256F851900C56C8D /* ImageCompressionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageCompressionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E353C290256F851900C56C8D /* ImageCompressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCompressionTests.swift; sourceTree = "<group>"; };
+		E353C292256F851900C56C8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E353C297256F851900C56C8D /* ImageCompressionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageCompressionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E353C29B256F851900C56C8D /* ImageCompressionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCompressionUITests.swift; sourceTree = "<group>"; };
+		E353C29D256F851900C56C8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC3177AA5EC5BB506BD7FA1F /* Pods-ImageCompression.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCompression.debug.xcconfig"; path = "Target Support Files/Pods-ImageCompression/Pods-ImageCompression.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E353C273256F851500C56C8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0902A290766520D1974DEE6C /* Pods_ImageCompression.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E353C289256F851900C56C8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39B6C40682DAA6817248A219 /* Pods_ImageCompressionTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E353C294256F851900C56C8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8431F2B6B228CEAA5E33AC2F /* Pods_ImageCompression_ImageCompressionUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2C6E6E2AFBD2083DECFB408 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC3177AA5EC5BB506BD7FA1F /* Pods-ImageCompression.debug.xcconfig */,
+				7B4F79CF01181745517F5626 /* Pods-ImageCompression.release.xcconfig */,
+				27ADACE317A99E90DADB406A /* Pods-ImageCompression-ImageCompressionUITests.debug.xcconfig */,
+				078AD8838C4A448FDF51BBD3 /* Pods-ImageCompression-ImageCompressionUITests.release.xcconfig */,
+				16907BA1439C9AFCDBB917DA /* Pods-ImageCompressionTests.debug.xcconfig */,
+				B9F6A8D99E03492858F777DA /* Pods-ImageCompressionTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E353C26D256F851500C56C8D = {
+			isa = PBXGroup;
+			children = (
+				E353C278256F851500C56C8D /* ImageCompression */,
+				E353C28F256F851900C56C8D /* ImageCompressionTests */,
+				E353C29A256F851900C56C8D /* ImageCompressionUITests */,
+				E353C277256F851500C56C8D /* Products */,
+				A2C6E6E2AFBD2083DECFB408 /* Pods */,
+				EC90A2C10AD1FB3CC0F8EC89 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E353C277256F851500C56C8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E353C276256F851500C56C8D /* ImageCompression.app */,
+				E353C28C256F851900C56C8D /* ImageCompressionTests.xctest */,
+				E353C297256F851900C56C8D /* ImageCompressionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E353C278256F851500C56C8D /* ImageCompression */ = {
+			isa = PBXGroup;
+			children = (
+				E353C279256F851500C56C8D /* AppDelegate.swift */,
+				E353C27B256F851500C56C8D /* SceneDelegate.swift */,
+				E353C27D256F851500C56C8D /* ViewController.swift */,
+				E353C27F256F851500C56C8D /* Main.storyboard */,
+				E353C282256F851900C56C8D /* Assets.xcassets */,
+				E353C284256F851900C56C8D /* LaunchScreen.storyboard */,
+				E353C287256F851900C56C8D /* Info.plist */,
+			);
+			path = ImageCompression;
+			sourceTree = "<group>";
+		};
+		E353C28F256F851900C56C8D /* ImageCompressionTests */ = {
+			isa = PBXGroup;
+			children = (
+				E353C290256F851900C56C8D /* ImageCompressionTests.swift */,
+				E353C292256F851900C56C8D /* Info.plist */,
+			);
+			path = ImageCompressionTests;
+			sourceTree = "<group>";
+		};
+		E353C29A256F851900C56C8D /* ImageCompressionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E353C29B256F851900C56C8D /* ImageCompressionUITests.swift */,
+				E353C29D256F851900C56C8D /* Info.plist */,
+			);
+			path = ImageCompressionUITests;
+			sourceTree = "<group>";
+		};
+		EC90A2C10AD1FB3CC0F8EC89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				775EFE1992E0E2A4E89717A7 /* Pods_ImageCompression.framework */,
+				D6A785104CE2973CAE695DC8 /* Pods_ImageCompression_ImageCompressionUITests.framework */,
+				71D65C9F6F44CB5EF6B83C30 /* Pods_ImageCompressionTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E353C275256F851500C56C8D /* ImageCompression */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E353C2A0256F851900C56C8D /* Build configuration list for PBXNativeTarget "ImageCompression" */;
+			buildPhases = (
+				266EB1D6B9B0E1298F064A13 /* [CP] Check Pods Manifest.lock */,
+				E353C272256F851500C56C8D /* Sources */,
+				E353C273256F851500C56C8D /* Frameworks */,
+				E353C274256F851500C56C8D /* Resources */,
+				7FCFA0F0A8AC69C42E414E1F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageCompression;
+			productName = ImageCompression;
+			productReference = E353C276256F851500C56C8D /* ImageCompression.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E353C28B256F851900C56C8D /* ImageCompressionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E353C2A3256F851900C56C8D /* Build configuration list for PBXNativeTarget "ImageCompressionTests" */;
+			buildPhases = (
+				545FE0928E8F277FD355D971 /* [CP] Check Pods Manifest.lock */,
+				E353C288256F851900C56C8D /* Sources */,
+				E353C289256F851900C56C8D /* Frameworks */,
+				E353C28A256F851900C56C8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E353C28E256F851900C56C8D /* PBXTargetDependency */,
+			);
+			name = ImageCompressionTests;
+			productName = ImageCompressionTests;
+			productReference = E353C28C256F851900C56C8D /* ImageCompressionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E353C296256F851900C56C8D /* ImageCompressionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E353C2A6256F851900C56C8D /* Build configuration list for PBXNativeTarget "ImageCompressionUITests" */;
+			buildPhases = (
+				3C6EA7D7AF57485522BAB236 /* [CP] Check Pods Manifest.lock */,
+				E353C293256F851900C56C8D /* Sources */,
+				E353C294256F851900C56C8D /* Frameworks */,
+				E353C295256F851900C56C8D /* Resources */,
+				EBD1276CB7E52796D3B7F61C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E353C299256F851900C56C8D /* PBXTargetDependency */,
+			);
+			name = ImageCompressionUITests;
+			productName = ImageCompressionUITests;
+			productReference = E353C297256F851900C56C8D /* ImageCompressionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E353C26E256F851500C56C8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					E353C275256F851500C56C8D = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					E353C28B256F851900C56C8D = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = E353C275256F851500C56C8D;
+					};
+					E353C296256F851900C56C8D = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = E353C275256F851500C56C8D;
+					};
+				};
+			};
+			buildConfigurationList = E353C271256F851500C56C8D /* Build configuration list for PBXProject "ImageCompression" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E353C26D256F851500C56C8D;
+			productRefGroup = E353C277256F851500C56C8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E353C275256F851500C56C8D /* ImageCompression */,
+				E353C28B256F851900C56C8D /* ImageCompressionTests */,
+				E353C296256F851900C56C8D /* ImageCompressionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E353C274256F851500C56C8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E353C286256F851900C56C8D /* LaunchScreen.storyboard in Resources */,
+				E353C283256F851900C56C8D /* Assets.xcassets in Resources */,
+				E353C281256F851500C56C8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E353C28A256F851900C56C8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E353C295256F851900C56C8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		266EB1D6B9B0E1298F064A13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageCompression-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C6EA7D7AF57485522BAB236 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageCompression-ImageCompressionUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		545FE0928E8F277FD355D971 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageCompressionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FCFA0F0A8AC69C42E414E1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageCompression/Pods-ImageCompression-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageCompression/Pods-ImageCompression-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageCompression/Pods-ImageCompression-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBD1276CB7E52796D3B7F61C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageCompression-ImageCompressionUITests/Pods-ImageCompression-ImageCompressionUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageCompression-ImageCompressionUITests/Pods-ImageCompression-ImageCompressionUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageCompression-ImageCompressionUITests/Pods-ImageCompression-ImageCompressionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E353C272256F851500C56C8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E353C27E256F851500C56C8D /* ViewController.swift in Sources */,
+				E353C27A256F851500C56C8D /* AppDelegate.swift in Sources */,
+				E353C27C256F851500C56C8D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E353C288256F851900C56C8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E353C291256F851900C56C8D /* ImageCompressionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E353C293256F851900C56C8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E353C29C256F851900C56C8D /* ImageCompressionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E353C28E256F851900C56C8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E353C275256F851500C56C8D /* ImageCompression */;
+			targetProxy = E353C28D256F851900C56C8D /* PBXContainerItemProxy */;
+		};
+		E353C299256F851900C56C8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E353C275256F851500C56C8D /* ImageCompression */;
+			targetProxy = E353C298256F851900C56C8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E353C27F256F851500C56C8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E353C280256F851500C56C8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E353C284256F851900C56C8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E353C285256F851900C56C8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E353C29E256F851900C56C8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E353C29F256F851900C56C8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E353C2A1256F851900C56C8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC3177AA5EC5BB506BD7FA1F /* Pods-ImageCompression.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ULVD9U42JK;
+				INFOPLIST_FILE = ImageCompression/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bnr-safcsp-ios.ImageCompression";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E353C2A2256F851900C56C8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B4F79CF01181745517F5626 /* Pods-ImageCompression.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ULVD9U42JK;
+				INFOPLIST_FILE = ImageCompression/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bnr-safcsp-ios.ImageCompression";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E353C2A4256F851900C56C8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16907BA1439C9AFCDBB917DA /* Pods-ImageCompressionTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ImageCompressionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bnr-safcsp-ios.ImageCompressionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageCompression.app/ImageCompression";
+			};
+			name = Debug;
+		};
+		E353C2A5256F851900C56C8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9F6A8D99E03492858F777DA /* Pods-ImageCompressionTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ImageCompressionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bnr-safcsp-ios.ImageCompressionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageCompression.app/ImageCompression";
+			};
+			name = Release;
+		};
+		E353C2A7256F851900C56C8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27ADACE317A99E90DADB406A /* Pods-ImageCompression-ImageCompressionUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ImageCompressionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bnr-safcsp-ios.ImageCompressionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImageCompression;
+			};
+			name = Debug;
+		};
+		E353C2A8256F851900C56C8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 078AD8838C4A448FDF51BBD3 /* Pods-ImageCompression-ImageCompressionUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ImageCompressionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bnr-safcsp-ios.ImageCompressionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImageCompression;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E353C271256F851500C56C8D /* Build configuration list for PBXProject "ImageCompression" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E353C29E256F851900C56C8D /* Debug */,
+				E353C29F256F851900C56C8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E353C2A0256F851900C56C8D /* Build configuration list for PBXNativeTarget "ImageCompression" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E353C2A1256F851900C56C8D /* Debug */,
+				E353C2A2256F851900C56C8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E353C2A3256F851900C56C8D /* Build configuration list for PBXNativeTarget "ImageCompressionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E353C2A4256F851900C56C8D /* Debug */,
+				E353C2A5256F851900C56C8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E353C2A6256F851900C56C8D /* Build configuration list for PBXNativeTarget "ImageCompressionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E353C2A7256F851900C56C8D /* Debug */,
+				E353C2A8256F851900C56C8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E353C26E256F851500C56C8D /* Project object */;
+}

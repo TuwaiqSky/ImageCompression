@@ -1,0 +1,16 @@
+PODS:
+  - DataCompression (3.6.0)
+
+DEPENDENCIES:
+  - DataCompression
+
+SPEC REPOS:
+  trunk:
+    - DataCompression
+
+SPEC CHECKSUMS:
+  DataCompression: 06628f9c807b6f152e0da37635633f62fc51dc77
+
+PODFILE CHECKSUM: da9bcb77175b7a5495d04488fbc9225deeb68d31
+
+COCOAPODS: 1.10.0
